@@ -46,80 +46,94 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Frontend Developer',
+    title: 'Vastu Consultant',
     icon: frontend,
   },
   {
-    title: 'Backend Developer',
+    title: 'Floor Planning',
     icon: backend,
   },
   {
-    title: 'UI/UX Design',
+    title: 'Ayurveda Solution',
     icon: ux,
   },
   {
-    title: 'Software Prototyping',
+    title: 'Astro Vastu Consultant',
     icon: prototyping,
   },
 ];
-
 const technologies = [
   {
     name: 'HTML 5',
+    title:'Floor Plan Griding',
     icon: html,
   },
   {
     name: 'CSS 3',
+    title:'Bar Chart Balancing',
     icon: css,
   },
   {
     name: 'JavaScript',
+    title:'5 Elements Balancing',
     icon: javascript,
   },
   {
     name: 'TypeScript',
+    title:'Astro Vastu Remedies',
     icon: typescript,
   },
   {
     name: 'React JS',
+    title:'Marma Remedies',
     icon: reactjs,
   },
   {
     name: 'Redux Toolkit',
+    title:'Advance Devta Remedies',
     icon: redux,
   },
   {
     name: 'Tailwind CSS',
+    title:'Prakriti Balancing',
     icon: tailwind,
   },
   {
     name: 'Node JS',
+    title:'Ayurveda Remedies for Health',
     icon: nodejs,
   },
   {
     name: 'Rails',
+    title:'Chakra yoga',
     icon: rubyrails,
   },
   {
+    name: 'docker',
+    title:'Advance Meditation',
+    icon: docker,
+  },
+  {
     name: 'graphql',
+    title:'Temple Vastu',
     icon: graphql,
   },
   {
     name: 'postgresql',
+    title:'School Vastu',
     icon: postgresql,
   },
   {
     name: 'git',
+    title:'Bussiness Vastu',
     icon: git,
   },
   {
     name: 'figma',
+    title:'Residence Vastu',
     icon: figma,
   },
-  {
-    name: 'docker',
-    icon: docker,
-  },
+  
 ];
 
 const experiences = [
@@ -152,6 +166,8 @@ const experiences = [
     date: 'Sep 2022 - Present',
   },
 ];
+
+
 
 const projects = [
   {

@@ -5,6 +5,11 @@ import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import { send, sendHover } from '../assets';
+import { FaYoutube } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { Col, Row, Container } from 'react-bootstrap';
 
 const Contact = () => {
   const formRef = useRef();
@@ -29,16 +34,16 @@ const Contact = () => {
     //click on create a new template then click on save.
     emailjs
       .send(
-        'serviceID', // paste your ServiceID here (you'll get one when your service is created).
-        'templateID', // paste your TemplateID here (you'll find it under email templates).
+        'service_yup4elc', // paste your ServiceID here (you'll get one when your service is created).
+        'template_mzak55r', // paste your TemplateID here (you'll find it under email templates).
         {
           from_name: form.name,
-          to_name: 'YourName', // put your name here.
+          to_name: 'Sadhan Das', // put your name here.
           from_email: form.email,
-          to_email: 'youremail@gmail.com', //put your email here.
+          to_email: 'saddhandass009@gmail.com', //put your email here.
           message: form.message,
         },
-        'yourpublickey' //paste your Public Key here. You'll get it in your profile section.
+        '0Z-dXkSdYqpaGeDbe' //paste your Public Key here. You'll get it in your profile section.
       )
       .then(
         () => {
@@ -143,8 +148,55 @@ const Contact = () => {
               w-[23px] h-[23px] object-contain"
             />
           </button>
+          <Container className='mt-10 flex flex-col gap-6 font-poppins bg-jet p-20 '>
+            <Row>
+              <Col><button className="live-demo flex justify-center sm:gap-4 
+            gap-3 sm:text-[20px] text-[16px] text-timberWolf 
+            font-bold font-beckman items-center py-5 my-2
+            whitespace-nowrap sm:w-[130px] sm:h-[50px] 
+            w-[100px] h-[45px] rounded-[10px] bg-night 
+            hover:bg-battleGray hover:text-eerieBlack 
+            transition duration-[0.2s] ease-in-out ">
+                <a href='https://instagram.com/mahavastu_acharya_sadhan_?igshid=OGQ5ZDc2ODk2ZA=='><FaInstagram />INSTAGRAM</a>
+              </button></Col><br />
+              <Col><button className="live-demo flex justify-center sm:gap-4 
+            gap-3 sm:text-[20px] text-[16px] text-timberWolf 
+            font-bold font-beckman items-center py-5 my-2
+            whitespace-nowrap sm:w-[130px] sm:h-[50px] 
+            w-[100px] h-[45px] rounded-[10px] bg-night 
+            hover:bg-battleGray hover:text-eerieBlack 
+            transition duration-[0.2s] ease-in-out display: inline;">
+                <a href='https://www.facebook.com/profile.php?id=61550597844226&mibextid=LQQJ4d'><FaFacebook />FACEBOOK</a>
+              </button></Col>
+              <Col><button className="live-demo flex justify-center sm:gap-4 
+            gap-3 sm:text-[20px] text-[16px] text-timberWolf 
+            font-bold font-beckman items-center py-5 my-2
+            whitespace-nowrap sm:w-[130px] sm:h-[50px] 
+            w-[100px] h-[45px] rounded-[10px] bg-night 
+            hover:bg-battleGray hover:text-eerieBlack 
+            transition duration-[0.2s] ease-in-out">
+                <a href='https://www.linkedin.com/in/mahavastu-acharya-sadhan-das-64228b289'><FaLinkedin />LinkedIn</a>
+              </button></Col><br />
+              <Col className="pb-20"><button className="live-demo flex justify-center sm:gap-4 
+            gap-3 sm:text-[20px] text-[16px] text-timberWolf 
+            font-bold font-beckman items-center py-5 my-2
+            whitespace-nowrap sm:w-[130px] sm:h-[50px] 
+            w-[100px] h-[45px] rounded-[10px] bg-night 
+            hover:bg-battleGray hover:text-eerieBlack 
+            transition duration-[0.2s] ease-in-out">
+                <a href='https://www.youtube.com/@Vedictraditionsolution'><FaYoutube />YOUTUBE</a>
+              </button></Col>
+            </Row>
+          </Container>
+          <div className="live-demo flex justify-center sm:gap-4 
+            gap-3 sm:text-[15px] text-[10px] text-timberWolf 
+             font-Roboto items-center my-2">
+              <p > Phone :- 8961146920</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <p > Email :- saddhandass009@gmail.com</p>
+          </div>
         </form>
       </motion.div>
+
     </div>
   );
 };
